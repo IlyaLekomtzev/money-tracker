@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{vue?}', function () {
+/*Route::get('/{vue?}', function () {
     return view('welcome');
-})->where('vue', '[\/w\.-]*');
+})->where('vue', '[\/w\.-]*');*/
+
+Route::fallback(function (){
+    return view('welcome');
+});

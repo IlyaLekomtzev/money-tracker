@@ -8,14 +8,13 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        <div id="app">
-            <App />
-        </div>
+        <div id="app"></div>
 
         <!-- Scripts -->
         <script src="{{asset('js/app.js')}}"></script>
