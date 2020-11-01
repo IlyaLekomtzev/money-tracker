@@ -3,8 +3,10 @@ export default function dateFilter (value, format = 'date') {
 
     if (format.includes('date')) {
         options.day = '2-digit',
-        options.month = 'long',
-        options.year = 'numeric'
+        options.month = 'numeric',
+        options.year = '2-digit',
+        options.hour = '2-digit',
+        options.minute = '2-digit'
     }
 
     if (format.includes('time')) {

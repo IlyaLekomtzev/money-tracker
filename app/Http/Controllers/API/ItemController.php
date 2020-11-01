@@ -15,7 +15,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        return Item::orderBy('id', 'desc')->paginate(10);
+        return Item::orderBy('id', 'desc')->paginate(20);
     }
 
     /**

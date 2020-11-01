@@ -90,7 +90,7 @@
     .balance{
         width: 100%;
         padding: 50px 0;
-        margin-bottom: 75px;
+        margin-bottom: 60px;
         background: linear-gradient(246.04deg, #B582F9 0%, #565FE6 100%);
         position: relative;
 

@@ -2,7 +2,7 @@
     <div class="items-wrap__item-wrap">
         <div class="items-wrap__item-title">
             {{ getTitle }}
-            <span>{{ item.created_at | date('item.created_at') }}</span>
+            <span>{{ item.created_at | date('date') }}</span>
         </div>
         <div class="items-wrap__item-value" :class="getActionColorClass">
             {{ getAction }}{{ value }} ₽
@@ -64,12 +64,32 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+        &__item-title{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            color: #0D1131;
+            font-weight: 700;
+
+            span{
+                font-size: 12px;
+                color: #A3A5AE;
+                font-weight: 400
+            }
+        }
+        
+        &__item-value{
+            font-weight: 700;
+            font-size: 16px;
         }
     }
     .color-plus{
-        color: #2fa360;
+        color: #4FC99B;
     }
     .color-minus{
-        color: pink;
+        color: #EB5757;
     }
 </style>
