@@ -1,17 +1,17 @@
 <template>
     <div>
-        <BalanceNav />
-
         <router-view />
+
+        <BottomNav />
     </div>
 </template>
 
 <script>
-    import BalanceNav from "./parts/BalanceNav";
+    import BottomNav from "./parts/BottomNav";
 
     export default {
         components: {
-            BalanceNav
+            BottomNav
         }
     }
 </script>

@@ -5,7 +5,7 @@
             <span>{{ item.created_at | date('date') }}</span>
         </div>
         <div class="items-wrap__item-value" :class="getActionColorClass">
-            {{ getAction }}{{ value }} ₽
+            {{ getAction }}{{ value | priceFormat(value) }} ₽
         </div>
     </div>
 </template>
@@ -36,9 +36,6 @@
                 action: this.item.action,
                 value: this.item.value,
             }
-        },
-        mounted() {
-            console.log(this.item)
         },
         computed: {
             getAction () {

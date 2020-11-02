@@ -20,9 +20,15 @@ const router = new VueRouter({
         {
             path: '/add',
             name: 'Add',
-            component: () => import('../views/AddItem')
+            component: () => import('../views/items/Add')
         },
-    ]
+        {
+            path: '*',
+            name: 'Not Found',
+            component: () => import('../views/404')
+        },
+    ],
+    linkActiveClass: 'current',
 });
 
 export default router;

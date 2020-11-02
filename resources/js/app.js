@@ -8,15 +8,19 @@
 require('./bootstrap');
 
 import Vue from 'vue';
+import Vuelidate from 'vuelidate';
 import App from './components/App';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import router from "./router";
 
 import dateFilter from './filters/date.filter';
+import PriceFilter from './filters/price.format.filter';
 
+Vue.use(Vuelidate)
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.filter('date', dateFilter);
+Vue.filter('priceFormat', PriceFilter);
 
 const app = new Vue({
     el: '#app',
